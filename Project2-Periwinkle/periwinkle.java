@@ -616,7 +616,7 @@ public class periwinkle
             }
         }
         
-        //Defuzzifying fuzzy values
+        //Defuzzifying fuzzy values and rounding the dosage to the nearest ten
         double p = showParacetamol.weightedAverageDefuzzify();
         p = Math.round(p/10)*10;
         double a = showAdvil.weightedAverageDefuzzify();
